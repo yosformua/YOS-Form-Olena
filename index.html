@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk" data-i18n-title="meta.title">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olena Sychova — Interior Designer</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="assets/img/Logo.png" alt="YOS"></a>
+    <nav class="main-nav">
+      <a href="#about" data-i18n="nav.about">Про мене</a>
+      <a href="#portfolio" data-i18n="nav.portfolio">Портфоліо</a>
+      <a href="#process" data-i18n="nav.process">Процес роботи</a>
+      <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav.cta">Обговорити проєкт</a>
+      <div class="lang-switch">
+        <button data-lang="uk">🇺🇦</button>
+        <button data-lang="en">🇬🇧</button>
+      </div>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="assets/img/hero-house.jpg" alt="Olena Sychova interior design">
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title" data-i18n="hero.title">Дизайн-проєкт — продумана система рішень для майбутнього простору</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Планування, атмосфера, матеріали, світло та деталі — в єдиній концепції.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn btn-primary" data-i18n="hero.cta_primary">Дивитися роботи</a>
+      <a href="#about" class="btn btn-outline" data-i18n="hero.cta_secondary">Про мене</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media">
+      <img src="assets/img/about.jpg" alt="Olena Sychova">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow" data-i18n="about.eyebrow">Про дизайнерку</span>
+      <h2 class="about-name" data-i18n="about.title">Олена Сичова</h2>
+      <span class="about-role" data-i18n="about.role">Interior Designer</span>
+      <p data-i18n="about.text">Дизайнерка інтер'єрів із 12-річним досвідом роботи...</p>
+      <p data-i18n="about.text_secondary">Для мене дизайн інтер'єру — це не лише візуальний образ...</p>
+
+      <div class="stat-row">
+        <div class="stat"><b data-i18n="about.stat_years_value">12</b><span data-i18n="about.stat_years_label">років досвіду</span></div>
+        <div class="stat"><b data-i18n="about.stat_projects_value">80+</b><span data-i18n="about.stat_projects_label">реалізованих проєктів</span></div>
+        <div class="stat"><b data-i18n="about.stat_scope_value">3</b><span data-i18n="about.stat_scope_label">напрямки роботи</span></div>
+      </div>
+
+      <div class="pillars">
+        <span data-i18n="about.pillar_1">Естетика</span>
+        <span data-i18n="about.pillar_2">Функція</span>
+        <span data-i18n="about.pillar_3">Реалізація</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="portfolio.eyebrow">Вибрані роботи</span>
+      <h2 class="section-title" data-i18n="portfolio.title">Портфоліо</h2>
+      <p class="section-subtitle" data-i18n="portfolio.subtitle">Архітектура, житлові інтер'єри та комерційні простори.</p>
+    </div>
+
+    <div class="portfolio-header">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter_all">Усі проєкти</button>
+        <button class="filter-btn" data-filter="architecture" data-i18n="portfolio.filter_architecture">Архітектура</button>
+        <button class="filter-btn" data-filter="residential" data-i18n="portfolio.filter_residential">Житлові інтер'єри</button>
+        <button class="filter-btn" data-filter="commercial" data-i18n="portfolio.filter_commercial">Комерційні простори</button>
+      </div>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+      <!-- rendered by js/app.js from data/projects.json -->
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="process.eyebrow">Як ми працюємо</span>
+      <h2 class="section-title" data-i18n="process.title">Процес співпраці</h2>
+    </div>
+
+    <div class="process-list">
+      <div class="process-item">
+        <span class="process-num">01</span>
+        <div>
+          <h3 data-i18n="process.step1_title">Бриф і зустріч</h3>
+          <p data-i18n="process.step1_text">Обговорюємо задачі, побажання, бюджет і терміни.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">02</span>
+        <div>
+          <h3 data-i18n="process.step2_title">Планування</h3>
+          <p data-i18n="process.step2_text">Розробка планувальних рішень, зонування та технічних вузлів.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">03</span>
+        <div>
+          <h3 data-i18n="process.step3_title">Концепція та візуалізація</h3>
+          <p data-i18n="process.step3_text">Атмосфера, матеріали, світло — у реалістичних 3D-візуалізаціях.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">04</span>
+        <div>
+          <h3 data-i18n="process.step4_title">Робоча документація</h3>
+          <p data-i18n="process.step4_text">Креслення, розгортки, електрика — усе для точної реалізації.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">05</span>
+        <div>
+          <h3 data-i18n="process.step5_title">Супровід реалізації</h3>
+          <p data-i18n="process.step5_text">Авторський нагляд на об'єкті до завершення проєкту.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow" data-i18n="contact.eyebrow">На зв'язку</span>
+      <h2 class="section-title" data-i18n="contact.title">Обговоримо ваш проєкт?</h2>
+      <p class="section-subtitle" data-i18n="contact.text">Напишіть кілька слів про простір, який хочете створити.</p>
+      <dl>
+        <dt data-i18n="contact.instagram_label">Instagram</dt>
+        <dd><a href="https://www.instagram.com/yos_form/" target="_blank" rel="noopener">@yos_form</a></dd>
+        <dt data-i18n="contact.email_label">E-mail</dt>
+        <dd><a href="mailto:karawadzho@gmail.com">karawadzho@gmail.com</a></dd>
+        <dt data-i18n="contact.phone_label">Телефон</dt>
+        <dd><a href="tel:+380983229111">+38 098 322 91 11</a></dd>
+      </dl>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Форма — заглушка для макета.');">
+      <input type="text" data-i18n-placeholder="contact.form_name" placeholder="Ваше ім'я" required>
+      <input type="text" data-i18n-placeholder="contact.form_contact" placeholder="Email або телефон" required>
+      <textarea data-i18n-placeholder="contact.form_message" placeholder="Коротко про проєкт"></textarea>
+      <button type="submit" class="btn btn-dark" data-i18n="contact.form_submit">Надіслати</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">OLENA <span>SYCHOVA</span></span>
+    <p><span data-i18n="footer.made_with">Дизайн та реалізація простору</span> · YOS FORM © 2026 — <span data-i18n="footer.rights">Усі права захищені.</span></p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

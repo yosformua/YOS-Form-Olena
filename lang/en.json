@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Olena Sychova — Interior Designer"
+  },
+  "nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Start a project"
+  },
+  "hero": {
+    "eyebrow": "Interior designer · YOS FORM",
+    "title": "An interior project is a considered system of decisions for a future space",
+    "subtitle": "Layout, atmosphere, materials, light and detail — in a single concept.",
+    "cta_primary": "View work",
+    "cta_secondary": "About me"
+  },
+  "about": {
+    "eyebrow": "About the designer",
+    "title": "Olena Sychova",
+    "role": "Interior Designer",
+    "text": "Interior designer with 12 years of experience. In this time I've completed over 80 projects — apartments, private houses and commercial spaces. My work combines aesthetics, functionality, technical precision and hands-on delivery experience.",
+    "text_secondary": "To me, interior design isn't just a visual image — it's a considered system of decisions that helps create a space for real life.",
+    "stat_years_value": "12",
+    "stat_years_label": "years of experience",
+    "stat_projects_value": "80+",
+    "stat_projects_label": "completed projects",
+    "stat_scope_value": "3",
+    "stat_scope_label": "areas of work",
+    "pillar_1": "Aesthetics",
+    "pillar_2": "Function",
+    "pillar_3": "Delivery"
+  },
+  "portfolio": {
+    "eyebrow": "Selected work",
+    "title": "Portfolio",
+    "subtitle": "Architecture, residential interiors and commercial spaces — examples of completed projects.",
+    "filter_all": "All projects",
+    "filter_architecture": "Architecture",
+    "filter_residential": "Residential interiors",
+    "filter_commercial": "Commercial spaces",
+    "view_project": "View project"
+  },
+  "categories": {
+    "architecture_label": "Architecture",
+    "architecture_desc": "Facades / cottages / gazebos / outdoor areas",
+    "residential_label": "Residential Interiors",
+    "residential_desc": "Living rooms / kitchens / bedrooms / bathrooms",
+    "commercial_label": "Commercial Spaces",
+    "commercial_desc": "Offices / salons / studios / showrooms"
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "Working process",
+    "step1_title": "Brief and meeting",
+    "step1_text": "We discuss goals, preferences, budget and timeline for the future space.",
+    "step2_title": "Layout",
+    "step2_text": "Developing layout solutions, zoning and technical arrangement.",
+    "step3_title": "Concept and visualization",
+    "step3_text": "Atmosphere, materials, light — in realistic 3D renders.",
+    "step4_title": "Working documentation",
+    "step4_text": "Drawings, elevations, electrics — everything needed for precise delivery.",
+    "step5_title": "Delivery support",
+    "step5_text": "On-site design supervision through project completion."
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Let's discuss your project",
+    "text": "Send a few words about the space you want to create.",
+    "instagram_label": "Instagram",
+    "email_label": "E-mail",
+    "phone_label": "Phone",
+    "form_name": "Your name",
+    "form_contact": "Email or phone",
+    "form_message": "A bit about your project",
+    "form_submit": "Send"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "made_with": "Design and space delivery"
+  },
+  "project": {
+    "back": "All projects",
+    "year": "Year",
+    "location": "Location",
+    "description": "Project description",
+    "gallery": "Gallery",
+    "technical": "Technical drawings",
+    "next_project": "Next project"
+  }
+}
