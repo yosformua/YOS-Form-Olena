@@ -60,7 +60,7 @@
 
     currentIndex = 0;
 
-
+    
     if (dotsContainer) {
       dotsContainer.innerHTML = '';
       slides.forEach((_, index) => {
@@ -73,6 +73,7 @@
       });
     }
 
+    
     if (prevBtn) {
       const newPrev = prevBtn.cloneNode(true);
       prevBtn.parentNode.replaceChild(newPrev, prevBtn);
@@ -85,41 +86,56 @@
       newNext.addEventListener('click', () => goToSlide(currentIndex + 1));
     }
 
+    
     let startX = 0;
-    let endX = 0;
+    let startY = 0;
+    let deltaX = 0;
+    let deltaY = 0;
+    let isTouch = false;
     let isDragging = false;
+    let wasSwiping = false;
 
-    track.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', (e) => {
-      endX = e.changedTouches[0].clientX;
-      handleSwipe();
-    }, { passive: true });
-
-    track.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      startX = e.clientX;
+    
+    slides.forEach((img) => {
+      img.addEventListener('dragstart', (e) => e.preventDefault());
     });
 
-    track.addEventListener('mouseup', (e) => {
+    function handleStart(e) {
+      isTouch = e.type === 'touchstart';
+      const point = isTouch ? e.touches[0] : e;
+      
+      startX = point.clientX;
+      startY = point.clientY;
+      deltaX = 0;
+      deltaY = 0;
+      isDragging = true;
+      wasSwiping = false;
+    }
+
+    function handleMove(e) {
+      if (!isDragging) return;
+
+      const point = isTouch ? e.touches[0] : e;
+      deltaX = point.clientX - startX;
+      deltaY = point.clientY - startY;
+
+      
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
+        wasSwiping = true;
+        
+        if (e.cancelable) e.preventDefault();
+      }
+    }
+
+    
+    function handleEnd() {
       if (!isDragging) return;
       isDragging = false;
-      endX = e.clientX;
-      handleSwipe();
-    });
 
-    track.addEventListener('mouseleave', () => {
-      isDragging = false;
-    });
+      const threshold = 50;
 
-    function handleSwipe() {
-      const threshold = 40;
-      const diff = startX - endX;
-
-      if (Math.abs(diff) > threshold) {
-        if (diff > 0) {
+      if (Math.abs(deltaX) > threshold && Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX < 0) {
           goToSlide(currentIndex + 1);
         } else {
           goToSlide(currentIndex - 1); 
@@ -127,10 +143,27 @@
       }
     }
 
+
+    track.addEventListener('touchstart', handleStart, { passive: true });
+    track.addEventListener('touchmove', handleMove, { passive: false });
+    track.addEventListener('touchend', handleEnd);
+
+
+    track.addEventListener('mousedown', handleStart);
+    window.addEventListener('mousemove', handleMove);
+    window.addEventListener('mouseup', handleEnd);
+
+    track.dataset.wasSwiping = 'false';
+    track.addEventListener('click', (e) => {
+      if (wasSwiping) {
+        e.stopImmediatePropagation();
+      }
+    }, true);
+
     goToSlide(0);
   }
 
-
+  // Полноэкранный просмотр
   function initLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -140,7 +173,7 @@
     if (!lightbox || !lightboxImg) return;
 
     galleryImages.forEach((img) => {
-      img.addEventListener('click', () => {
+      img.addEventListener('click', (e) => {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
         lightbox.classList.add('active');
