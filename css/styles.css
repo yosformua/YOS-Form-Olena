@@ -703,6 +703,8 @@ section {
   display: flex;
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .carousel-track img {
@@ -893,7 +895,8 @@ section {
     transform: none;
   }
   .stat-row{
-    gap: 10px;
+    flex-direction: column;
+    text-align: center;
   }
 }
 

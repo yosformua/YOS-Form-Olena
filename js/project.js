@@ -60,6 +60,7 @@
 
     currentIndex = 0;
 
+
     if (dotsContainer) {
       dotsContainer.innerHTML = '';
       slides.forEach((_, index) => {
@@ -84,10 +85,52 @@
       newNext.addEventListener('click', () => goToSlide(currentIndex + 1));
     }
 
+    let startX = 0;
+    let endX = 0;
+    let isDragging = false;
+
+    track.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      handleSwipe();
+    }, { passive: true });
+
+    track.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+    });
+
+    track.addEventListener('mouseup', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      endX = e.clientX;
+      handleSwipe();
+    });
+
+    track.addEventListener('mouseleave', () => {
+      isDragging = false;
+    });
+
+    function handleSwipe() {
+      const threshold = 40;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(currentIndex - 1); 
+        }
+      }
+    }
+
     goToSlide(0);
   }
 
-  // Функционал открытия картинки на полный экран
+
   function initLightbox() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -111,7 +154,6 @@
       if (e.target === lightbox) closeLightbox();
     });
 
-    // Закрытие по нажатию Esc
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeLightbox();
     });
@@ -138,7 +180,7 @@
     document.title = `${project.title} — Olena Sychova`;
 
     initCarousel();
-    initLightbox(); // Инициализация клика по фото
+    initLightbox();
   }
 
   document.addEventListener('DOMContentLoaded', loadProject);
