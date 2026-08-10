@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="uk" data-i18n-title="meta.title">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project — Olena Sychova</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — Olena Sychova</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="index.html" class="logo">OLENA <span>SYCHOVA</span></a>
-    <nav class="main-nav">
-      <a href="index.html#about" data-i18n="nav.about">Про мене</a>
-      <a href="index.html#portfolio" data-i18n="nav.portfolio">Портфоліо</a>
-      <a href="index.html#process" data-i18n="nav.process">Процес роботи</a>
-      <a href="index.html#contact" data-i18n="nav.contact">Контакти</a>
-      <a href="index.html#contact" class="nav-cta" data-i18n="nav.cta">Обговорити проєкт</a>
-      <div class="lang-switch">
-        <button data-lang="uk">🇺🇦</button>
-        <button data-lang="en">🇬🇧</button>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo"><img src="assets/img/Logo.png" alt="YOS"> × Olena <span>Sychova</span></a>
+      <nav class="main-nav">
+        <a href="index.html#about" data-i18n="nav.about">Про мене</a>
+        <a href="index.html#portfolio" data-i18n="nav.portfolio">Портфоліо</a>
+        <a href="index.html#process" data-i18n="nav.process">Процес роботи</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Контакти</a>
+        <a href="index.html#contact" class="nav-cta" data-i18n="nav.cta">Обговорити проєкт</a>
+        <div class="lang-switch">
+          <button data-lang="uk">🇺🇦</button>
+          <button data-lang="en">🇬🇧</button>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <img id="project-cover" src="" alt="">
+    <div class="wrap">
+      <a href="index.html#portfolio" class="back-link">← <span data-i18n="project.back">Усі проєкти</span></a>
+      <h1 class="project-title" id="project-title"></h1>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="wrap">
+      <dl class="project-meta-row">
+        <div>
+          <dt data-i18n="project.year">Рік</dt>
+          <dd id="project-year"></dd>
+        </div>
+        <div>
+          <dt data-i18n="project.location">Локація</dt>
+          <dd id="project-location"></dd>
+        </div>
+        <div>
+          <dt data-i18n="portfolio.filter_all">Категорія</dt>
+          <dd id="project-category"></dd>
+        </div>
+      </dl>
+
+      <p class="project-description" id="project-description"></p>
+
+      <div class="carousel" id="project-carousel">
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="project-gallery">
+          </div>
+        </div>
+        <button class="carousel-btn btn-prev" aria-label="Предыдущий слайд">‹</button>
+        <button class="carousel-btn btn-next" aria-label="Следующий слайд">›</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
       </div>
-    </nav>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </section>
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Увеличенное фото">
   </div>
-</header>
-
-<section class="project-hero">
-  <img id="project-cover" src="" alt="">
-  <div class="wrap">
-    <a href="index.html#portfolio" class="back-link">← <span data-i18n="project.back">Усі проєкти</span></a>
-    <h1 class="project-title" id="project-title"></h1>
-  </div>
-</section>
-
-<section class="project-body">
-  <div class="wrap">
-    <dl class="project-meta-row">
-      <div>
-        <dt data-i18n="project.year">Рік</dt>
-        <dd id="project-year"></dd>
-      </div>
-      <div>
-        <dt data-i18n="project.location">Локація</dt>
-        <dd id="project-location"></dd>
-      </div>
-      <div>
-        <dt data-i18n="portfolio.filter_all">Категорія</dt>
-        <dd id="project-category"></dd>
-      </div>
-    </dl>
-
-    <p class="project-description" id="project-description"></p>
-
-    <div class="project-gallery" id="project-gallery"></div>
-  </div>
-</section>
-
-<script src="js/i18n.js"></script>
-<script src="js/project.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/project.js"></script>
 </body>
+
 </html>

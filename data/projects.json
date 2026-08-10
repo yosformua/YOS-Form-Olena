@@ -1,86 +1,193 @@
 [
   {
-    "id": "private-house-berdychiv",
+    "id": "private-residential-complex",
     "category": "architecture",
     "title": "Приватний житловий комплекс",
     "year": "2024",
     "location": "Україна, м. Бердичів",
-    "cover": "assets/img/hero-house.jpg",
-    "gallery": ["assets/img/hero-house.jpg"],
+    "cover": "assets/img/p01-house-complex-1.jpg",
+    "gallery": [
+      "assets/img/p01-house-complex-1.jpg",
+      "assets/img/p01-house-complex-2.jpg",
+      "assets/img/p01-gazebo-1.jpg",
+      "assets/img/p01-gazebo-2.jpg"
+    ],
     "description": {
-      "uk": "Проєкт об'єднує архітектуру будинку, в'їзну групу, ворота та огорожу в єдину композицію. Важливо було зберегти цілісність матеріалів і стилістики, щоб будинок та зовнішні елементи сприймалися як один завершений комплекс.",
-      "ru": "Проект объединяет архитектуру дома, въездную группу, ворота и ограждение в единую композицию. Важно было сохранить целостность материалов и стилистики, чтобы дом и внешние элементы воспринимались как единый завершённый комплекс.",
-      "en": "The project unites the house architecture, entrance area, gate and fencing into a single composition. It was important to preserve consistency of materials and style so the house and exterior elements read as one complete complex."
+      "uk": "Проєкт об'єднує архітектуру будинку, в'їзну групу, ворота та огорожу в єдину композицію. Важливо було зберегти цілісність матеріалів і стилістики, щоб будинок та зовнішні елементи сприймалися як один завершений комплекс. У межах комплексу також розроблена альтанка — камерна зона відпочинку з великим склінням, вечірнім підсвічуванням і поєднанням темної цегли, дерева та навколишнього ландшафту.",
+      "ru": "Проект объединяет архитектуру дома, въездную группу, ворота и ограждение в единую композицию. Важно было сохранить целостность материалов и стилистики, чтобы дом и внешние элементы воспринимались как единый завершённый комплекс. В рамках комплекса также разработана беседка — камерная зона отдыха с большим остеклением, вечерней подсветкой и сочетанием тёмного кирпича, дерева и окружающего ландшафта.",
+      "en": "The project unites the house architecture, entrance area, gate and fencing into a single composition. It was important to preserve consistency of materials and style so the house and exterior elements read as one complete complex. The complex also includes a gazebo — an intimate lounge area with large glazing, evening lighting and a mix of dark brick, timber and the surrounding landscape."
     }
   },
   {
-    "id": "gazebo-berdychiv",
+    "id": "private-house-2023",
     "category": "architecture",
-    "title": "Альтанка при приватному будинку",
+    "title": "Приватний будинок",
+    "year": "2023",
+    "location": "Україна, м. Бердичів",
+    "cover": "assets/img/p02-house-2023.jpg",
+    "gallery": ["assets/img/p02-house-2023.jpg"],
+    "description": {
+      "uk": "Проєкт приватного будинку з лаконічною архітектурою, темною покрівлею та дерев'яними акцентами на фасаді.",
+      "ru": "Проект частного дома с лаконичной архитектурой, тёмной кровлей и деревянными акцентами на фасаде.",
+      "en": "A private house project with restrained architecture, a dark roof and timber accents on the facade."
+    }
+  },
+  {
+    "id": "comfort-plus-2020",
+    "category": "residential",
+    "title": "Котедж «Комфорт+» — кухня, кабінет, санвузли",
+    "year": "2020",
+    "location": "Україна, м. Львів",
+    "cover": "assets/img/p03-kitchen-living.jpg",
+    "gallery": [
+      "assets/img/p03-kitchen-living.jpg",
+      "assets/img/p03-cabinet.jpg",
+      "assets/img/p03-guest-bathroom.jpg",
+      "assets/img/p03-master-shower.jpg"
+    ],
+    "description": {
+      "uk": "Інтер'єр об'єднує кухню, обідню зону та вітальню в одному відкритому просторі. Світла база, зелений акцент у кухні, дерев'яні рейки та камінна зона створюють теплий житловий сценарій для щоденного відпочинку й спілкування. Кабінет вирішено у спокійній класичній стилістиці з темним робочим столом і зеленою акцентною панеллю. Гостьовий санвузол — світлий, з дерев'яними вставками та декоративною плиткою з рослинним мотивом. Майстер-душова — з теплими дерев'яними фактурами, пастельними акцентами та прозорим склінням.",
+      "ru": "Интерьер объединяет кухню, обеденную зону и гостиную в одном открытом пространстве. Светлая база, зелёный акцент на кухне, деревянные рейки и каминная зона создают тёплый жилой сценарий для повседневного отдыха и общения. Кабинет решён в спокойной классической стилистике с тёмным рабочим столом и зелёной акцентной панелью. Гостевой санузел — светлый, с деревянными вставками и декоративной плиткой с растительным мотивом. Мастер-душевая — с тёплыми деревянными фактурами, пастельными акцентами и прозрачным остеклением.",
+      "en": "The interior unites kitchen, dining and living areas in one open-plan space. A light base, a green kitchen accent, timber slats and a fireplace zone create a warm everyday scenario for rest and gathering. The study is designed in a calm classic style with a dark desk and a green accent panel. The guest bathroom is bright, with timber inserts and decorative botanical-motif tile. The master shower room features warm timber textures, pastel accents and clear glazing."
+    }
+  },
+  {
+    "id": "private-house-lounge-2020",
+    "category": "residential",
+    "title": "Приватний будинок — лаунж-зона та санвузли",
+    "year": "2020",
+    "location": "Україна, м. Львів",
+    "cover": "assets/img/p04-lounge.jpg",
+    "gallery": [
+      "assets/img/p04-lounge.jpg",
+      "assets/img/p04-master-bath.jpg",
+      "assets/img/p04-kids-bath.jpg"
+    ],
+    "description": {
+      "uk": "Лаунж-зона створена як теплий простір для відпочинку та спілкування. У проєкті поєднані цегляна фактура, дерев'яні поверхні, насичені кольорові акценти та м'які меблі, які формують атмосферу затишного домашнього кафе. Майстер-ванна — просторе рішення з мармуровою фактурою, деревом і графічним орнаментом. Дитяча ванна — світла, з зеленою акцентною плиткою та окремою душовою зоною.",
+      "ru": "Лаунж-зона создана как тёплое пространство для отдыха и общения. В проекте сочетаются кирпичная фактура, деревянные поверхности, насыщенные цветовые акценты и мягкая мебель, формирующие атмосферу уютного домашнего кафе. Мастер-ванная — просторное решение с мраморной фактурой, деревом и графичным орнаментом. Детская ванная — светлая, с зелёной акцентной плиткой и отдельной душевой зоной.",
+      "en": "A lounge area designed as a warm space for rest and conversation. The project blends brick texture, timber surfaces, saturated colour accents and soft furniture forming the atmosphere of a cosy home café. The master bathroom is a spacious solution with marble texture, wood and a graphic pattern. The kids' bathroom is bright, with green accent tile and a separate shower zone."
+    }
+  },
+  {
+    "id": "studio-apartment-2021",
+    "category": "residential",
+    "title": "Однокімнатна квартира",
+    "year": "2021",
+    "location": "Україна, м. Львів",
+    "cover": "assets/img/p05-studio.jpg",
+    "gallery": ["assets/img/p05-studio.jpg"],
+    "description": {
+      "uk": "Компактна квартира спроєктована як відкритий простір із поєднанням кухні, обідньої зони та вітальні. Лаконічна сучасна база доповнена графічними чорними елементами, скляними перегородками, дерев'яними фактурами та декоративною стіновою панеллю, яка додає інтер'єру індивідуального характеру.",
+      "ru": "Компактная квартира спроектирована как открытое пространство с объединением кухни, обеденной зоны и гостиной. Лаконичная современная база дополнена графичными чёрными элементами, стеклянными перегородками, деревянными фактурами и декоративной настенной панелью, которая добавляет интерьеру индивидуальный характер.",
+      "en": "A compact apartment designed as an open-plan space combining kitchen, dining and living areas. A restrained modern base is complemented by graphic black elements, glass partitions, timber textures and a decorative wall panel that gives the interior its own character."
+    }
+  },
+  {
+    "id": "eclectic-apartment-2021",
+    "category": "residential",
+    "title": "Квартира в стилі сучасної еклектики",
+    "year": "2021",
+    "location": "Україна, м. Львів",
+    "cover": "assets/img/p06-living.jpg",
+    "gallery": [
+      "assets/img/p06-living.jpg",
+      "assets/img/p06-kitchen.jpg",
+      "assets/img/p06-bedroom.jpg",
+      "assets/img/p06-shower.jpg"
+    ],
+    "description": {
+      "uk": "Вітальня в стилі сучасної еклектики з нейтральною базою, винним акцентним диваном, легким текстилем і декоративними деталями. Кухня поєднує світлу неокласичну базу з пастельними фасадами, кольоровими підвісами та компактною обідньою зоною біля вікна. Спальня поєднує спокійну нейтральну базу з тропічним акцентним панно та темним склом гардеробної. Душова вирішена як смілива кольорова зона: зелена плитка, пудрово-коралові акценти, чорна сантехніка та графічне скління.",
+      "ru": "Гостиная в стиле современной эклектики с нейтральной базой, винным акцентным диваном, лёгким текстилем и декоративными деталями. Кухня сочетает светлую неоклассическую базу с пастельными фасадами, цветными подвесами и компактной обеденной зоной у окна. Спальня сочетает спокойную нейтральную базу с тропическим акцентным панно и тёмным стеклом гардеробной. Душевая решена как смелая цветовая зона: зелёная плитка, пудрово-коралловые акценты, чёрная сантехника и графичное остекление.",
+      "en": "A living room in a modern eclectic style with a neutral base, a wine-coloured accent sofa, light textiles and decorative details. The kitchen combines a light neoclassical base with pastel fronts, coloured pendant lights and a compact dining nook by the window. The bedroom pairs a calm neutral base with a tropical accent mural and dark glass wardrobe doors. The shower room is a bold colour zone: green tile, powder-coral accents, black fixtures and graphic glazing."
+    }
+  },
+  {
+    "id": "comfort-plus-2022",
+    "category": "residential",
+    "title": "Котедж «Комфорт+» — кухня та спальня",
+    "year": "2022",
+    "location": "Україна, м. Львів",
+    "cover": "assets/img/p07-kitchen-dining.jpg",
+    "gallery": [
+      "assets/img/p07-kitchen-dining.jpg",
+      "assets/img/p07-bedroom.jpg"
+    ],
+    "description": {
+      "uk": "Кухня та обідня зона вирішені в теплих кавово-графітових відтінках із мармуровою фактурою та відкритими скляними секціями. Простір об'єднує кухню, острів, обідню групу та зону відпочинку. Спальня в котеджі виконана з акцентом на спокійну палітру, класичні елементи, природне освітлення та атмосферу приватного простору.",
+      "ru": "Кухня и обеденная зона решены в тёплых кофейно-графитовых оттенках с мраморной фактурой и открытыми стеклянными секциями. Пространство объединяет кухню, остров, обеденную группу и зону отдыха. Спальня в коттедже выполнена с акцентом на спокойную палитру, классические элементы, естественное освещение и атмосферу приватного пространства.",
+      "en": "The kitchen and dining area are designed in warm coffee-graphite tones with marble texture and open glass shelving. The space unites the kitchen, island, dining group and lounge zone. The bedroom in the cottage focuses on a calm palette, classic elements, natural light and a private, intimate atmosphere."
+    }
+  },
+  {
+    "id": "private-house-berdychiv-2022",
+    "category": "residential",
+    "title": "Приватний будинок у Бердичеві (2022)",
+    "year": "2022",
+    "location": "Україна, м. Бердичів",
+    "cover": "assets/img/p08-living.jpg",
+    "gallery": [
+      "assets/img/p08-living.jpg",
+      "assets/img/p08-kitchen.jpg",
+      "assets/img/p08-bedroom.jpg",
+      "assets/img/p08-bathroom.jpg"
+    ],
+    "description": {
+      "uk": "Вітальня вирішена у світлій сучасній стилістиці з мармуровою фактурою підлоги, дерев'яними панелями та м'якою нейтральною палітрою. Кухня продовжує стилістику проєкту: білий глянець поєднується з дерев'яними фасадами, мармуровою фактурою та скляними секціями. Спальня — спокійний світлий простір з пастельними акцентами та графічними чорними деталями. Санвузол вирішений у світлій мінімалістичній стилістиці з мармуровою фактурою та лаконічними меблями.",
+      "ru": "Гостиная решена в светлой современной стилистике с мраморной фактурой пола, деревянными панелями и мягкой нейтральной палитрой. Кухня продолжает стилистику проекта: белый глянец сочетается с деревянными фасадами, мраморной фактурой и стеклянными секциями. Спальня — спокойное светлое пространство с пастельными акцентами и графичными чёрными деталями. Санузел решён в светлой минималистичной стилистике с мраморной фактурой и лаконичной мебелью.",
+      "en": "The living room is designed in a bright modern style with marble floor texture, timber panels and a soft neutral palette. The kitchen continues the project's style: white gloss combines with timber fronts, marble texture and glass shelving. The bedroom is a calm, bright space with pastel accents and graphic black details. The bathroom is done in a bright minimalist style with marble texture and restrained furniture."
+    }
+  },
+  {
+    "id": "private-house-berdychiv-2024",
+    "category": "residential",
+    "title": "Приватний будинок у Бердичеві (2024)",
     "year": "2024",
     "location": "Україна, м. Бердичів",
-    "cover": "assets/img/gazebo.jpg",
-    "gallery": ["assets/img/gazebo.jpg"],
+    "cover": "assets/img/p09-kitchen-living.jpg",
+    "gallery": [
+      "assets/img/p09-kitchen-living.jpg",
+      "assets/img/p09-bedroom.jpg",
+      "assets/img/p09-shower.jpg"
+    ],
     "description": {
-      "uk": "Затверджений варіант альтанки для приватного житлового комплексу. Проєкт створює камерну зону відпочинку з великим склінням, вечірнім підсвічуванням і спокійним поєднанням темної цегли, дерева та навколишнього ландшафту.",
-      "ru": "Утверждённый вариант беседки для частного жилого комплекса. Проект создаёт камерную зону отдыха с большим остеклением, вечерней подсветкой и спокойным сочетанием тёмного кирпича, дерева и окружающего ландшафта.",
-      "en": "Approved gazebo design for a private residential complex. The project creates an intimate lounge area with large glazing, evening lighting and a calm mix of dark brick, timber and the surrounding landscape."
+      "uk": "Кухня, обідня зона та вітальня спроєктовані як єдиний відкритий простір для щоденного життя. Світла база поєднується з теплим деревом, чорними графічними деталями, м'якими текстильними фактурами та гірчичними акцентами. Спальня — стриманий сучасний простір із сіро-бежевою палітрою, дерев'яною текстурою та акцентною панеллю за узголів'ям. Душова вирішена в темнішій, камерній палітрі: фактурна зелено-сіра плитка, чорне скління та темна сантехніка.",
+      "ru": "Кухня, обеденная зона и гостиная спроектированы как единое открытое пространство для повседневной жизни. Светлая база сочетается с тёплым деревом, чёрными графичными деталями, мягкими текстильными фактурами и горчичными акцентами. Спальня — сдержанное современное пространство с серо-бежевой палитрой, деревянной текстурой и акцентной панелью за изголовьем. Душевая решена в более тёмной, камерной палитре: фактурная зелёно-серая плитка, чёрное остекление и тёмная сантехника.",
+      "en": "The kitchen, dining and living areas are designed as one open-plan space for everyday life. A light base pairs with warm wood, black graphic details, soft textile textures and mustard accents. The bedroom is a restrained modern space with a grey-beige palette, timber texture and an accent panel behind the headboard. The shower room takes on a darker, more intimate palette: textured green-grey tile, black glazing and dark fixtures."
     }
   },
   {
-    "id": "cottage-comfort-kitchen",
+    "id": "zk-prydesennya-2026",
     "category": "residential",
-    "title": "Кухня, обідня зона та вітальня в котеджі «Комфорт+»",
-    "year": "2020",
-    "location": "Україна, м. Львів",
-    "cover": "assets/img/kitchen.jpg",
-    "gallery": ["assets/img/kitchen.jpg"],
+    "title": "Котедж у ЖК «PryDesennya»",
+    "year": "2026",
+    "location": "Україна, м. Київ, ZK PryDesennya",
+    "cover": "assets/img/p10-living-1.jpg",
+    "gallery": [
+      "assets/img/p10-living-1.jpg",
+      "assets/img/p10-living-2.jpg",
+      "assets/img/p10-kitchen-dining.jpg",
+      "assets/img/p10-bedroom.jpg",
+      "assets/img/p10-bathroom.jpg"
+    ],
     "description": {
-      "uk": "Інтер'єр об'єднує кухню, обідню зону та вітальню в одному відкритому просторі. Світла база, зелений акцент у кухні, дерев'яні рейки та камінна зона створюють теплий житловий сценарій для щоденного відпочинку й спілкування.",
-      "ru": "Интерьер объединяет кухню, обеденную зону и гостиную в одном открытом пространстве. Светлая база, зелёный акцент на кухне, деревянные рейки и каминная зона создают тёплый жилой сценарий для повседневного отдыха и общения.",
-      "en": "The interior unites kitchen, dining and living areas in one open-plan space. A light base, a green kitchen accent, timber slats and a fireplace zone create a warm everyday scenario for rest and gathering."
+      "uk": "Вітальня спроєктована як відкрита зона відпочинку з каміном, сходами та великими вікнами. Теплі дерев'яні фактури, камінь, текстиль і жива зелень створюють спокійну сучасну атмосферу з відчуттям простору та домашнього комфорту. Кухня та обідня зона є частиною відкритого простору котеджу — функціональна кухня, легка обідня група та вітринне зберігання. Спальня оформлена як світлий приватний простір із теплою природною палітрою, дерев'яними панелями за узголів'ям та делікатними латунними акцентами. Гостьовий санвузол представлений у двох варіантах рішення з теплою природною палітрою та мармуровою фактурою.",
+      "ru": "Гостиная спроектирована как открытая зона отдыха с камином, лестницей и большими окнами. Тёплые деревянные фактуры, камень, текстиль и живая зелень создают спокойную современную атмосферу с ощущением простора и домашнего комфорта. Кухня и обеденная зона являются частью открытого пространства коттеджа — функциональная кухня, лёгкая обеденная группа и витринное хранение. Спальня оформлена как светлое приватное пространство с тёплой природной палитрой, деревянными панелями за изголовьем и деликатными латунными акцентами. Гостевой санузел представлен в двух вариантах решения с тёплой природной палитрой и мраморной фактурой.",
+      "en": "The living room is designed as an open lounge area with a fireplace, staircase and large windows. Warm timber textures, stone, textiles and live greenery create a calm modern atmosphere with a sense of space and comfort. The kitchen and dining area are part of the cottage's open-plan space — a functional kitchen, a light dining group and display storage. The bedroom is styled as a bright, private space with a warm natural palette, timber panels behind the headboard and delicate brass accents. The guest bathroom is presented in two design variants with a warm natural palette and marble texture."
     }
   },
   {
-    "id": "cottage-comfort-bathroom",
+    "id": "zk-great-2026",
     "category": "residential",
-    "title": "Гостьовий санвузол в котеджі «Комфорт+»",
-    "year": "2020",
-    "location": "Україна, м. Львів",
-    "cover": "assets/img/bathroom.jpg",
-    "gallery": ["assets/img/bathroom.jpg"],
+    "title": "Спальня в ЖК «Great»",
+    "year": "2026",
+    "location": "Україна, м. Київ, ZK Great",
+    "cover": "assets/img/p11-bedroom.jpg",
+    "gallery": ["assets/img/p11-bedroom.jpg"],
     "description": {
-      "uk": "Світлий гостьовий санвузол із дерев'яними вставками, декоративною плиткою з рослинним мотивом, живою зеленню та м'якою природною атмосферою.",
-      "ru": "Светлый гостевой санузел с деревянными вставками, декоративной плиткой с растительным мотивом, живой зеленью и мягкой природной атмосферой.",
-      "en": "A bright guest bathroom with timber inserts, decorative botanical-motif tile, live greenery and a soft natural atmosphere."
-    }
-  },
-  {
-    "id": "private-house-bedroom",
-    "category": "residential",
-    "title": "Майстер-спальня в приватному будинку",
-    "year": "2020",
-    "location": "Україна, м. Львів",
-    "cover": "assets/img/bedroom.jpg",
-    "gallery": ["assets/img/bedroom.jpg"],
-    "description": {
-      "uk": "Спальня у спокійній нейтральній палітрі з панельним узголів'ям, делікатним текстилем і графічними акцентами, що формують затишну, збалансовану атмосферу для відпочинку.",
-      "ru": "Спальня в спокойной нейтральной палитре с панельным изголовьем, деликатным текстилем и графичными акцентами, которые формируют уютную, сбалансированную атмосферу для отдыха.",
-      "en": "A bedroom in a calm neutral palette with a panelled headboard, delicate textiles and graphic accents forming a cosy, balanced atmosphere for rest."
-    }
-  },
-  {
-    "id": "lounge-private-house",
-    "category": "residential",
-    "title": "Лаунж-зона в приватному будинку",
-    "year": "2020",
-    "location": "Україна, м. Львів",
-    "cover": "assets/img/living.jpg",
-    "gallery": ["assets/img/living.jpg"],
-    "description": {
-      "uk": "Лаунж-зона створена як теплий простір для відпочинку та спілкування. У проєкті поєднані цегляна фактура, дерев'яні поверхні, насичені кольорові акценти та м'які меблі, які формують атмосферу затишного домашнього кафе.",
-      "ru": "Лаунж-зона создана как тёплое пространство для отдыха и общения. В проекте сочетаются кирпичная фактура, деревянные поверхности, насыщенные цветовые акценты и мягкая мебель, которые формируют атмосферу уютного домашнего кафе.",
-      "en": "A lounge area designed as a warm space for rest and conversation. The project blends brick texture, timber surfaces, saturated colour accents and soft furniture forming the atmosphere of a cosy home café."
+      "uk": "Спальня вирішена у стриманій сучасній стилістиці з теплою дерев'яною текстурою, м'якою сіро-бежевою палітрою та графічними чорними деталями. Скляна перегородка гардеробної зберігає легкість інтер'єру, а акцентна панель за узголів'ям формує виразну композицію спальної зони.",
+      "ru": "Спальня решена в сдержанной современной стилистике с тёплой деревянной текстурой, мягкой серо-бежевой палитрой и графичными чёрными деталями. Стеклянная перегородка гардеробной сохраняет лёгкость интерьера, а акцентная панель за изголовьем формирует выразительную композицию спальной зоны.",
+      "en": "The bedroom is designed in a restrained modern style with warm timber texture, a soft grey-beige palette and graphic black details. The glass wardrobe partition keeps the interior light, while the accent panel behind the headboard forms an expressive composition for the sleeping area."
     }
   },
   {
@@ -89,13 +196,44 @@
     "title": "Офіс «Magicom»",
     "year": "2025",
     "location": "Україна, м. Хмельницький",
-    "cover": "assets/img/office.jpg",
-    "gallery": ["assets/img/office.jpg"],
+    "cover": "assets/img/magicom-4.png",
+    "gallery": ["assets/img/magicom-4.png",
+                "assets/img/magicom-2.png",
+                "assets/img/magicom-3.png",
+                "assets/img/p13-magicom-office.jpg"],
     "hasTechnical": true,
     "description": {
-      "uk": "Офіс спроєктований як світлий робочий простір із відкритими робочими місцями, зоною для коротких зустрічей і компактною кухнею. Блакитно-зелені акценти, дерев'яні вертикалі та вбудовані системи зберігання перегукуються з айдентикою компанії й формують зібраний, доброзичливий інтер'єр для щоденної роботи.",
-      "ru": "Офис спроектирован как светлое рабочее пространство с открытыми рабочими местами, зоной для коротких встреч и компактной кухней. Сине-зелёные акценты, деревянные вертикали и встроенные системы хранения перекликаются с айдентикой компании и формируют собранный, дружелюбный интерьер для повседневной работы.",
-      "en": "The office is designed as a bright workspace with open desks, a short-meeting zone and a compact kitchen. Blue-green accents, timber verticals and built-in storage echo the company's identity, forming a coherent, welcoming interior for everyday work."
+      "uk": "Офіс спроєктований як світлий робочий простір із відкритими робочими місцями, зоною для коротких зустрічей і компактною кухнею. Блакитно-зелені акценти, дерев'яні вертикалі та вбудовані системи зберігання перегукуються з айдентикою компанії й формують зібраний, доброзичливий інтер'єр для щоденної роботи. Проєкт супроводжується повною робочою документацією: планування, освітлення, електрика, розгортки та меблеві рішення.",
+      "ru": "Офис спроектирован как светлое рабочее пространство с открытыми рабочими местами, зоной для коротких встреч и компактной кухней. Сине-зелёные акценты, деревянные вертикали и встроенные системы хранения перекликаются с айдентикой компании и формируют собранный, дружелюбный интерьер для повседневной работы. Проект сопровождается полной рабочей документацией: планировка, освещение, электрика, развёртки и мебельные решения.",
+      "en": "The office is designed as a bright workspace with open desks, a short-meeting zone and a compact kitchen. Blue-green accents, timber verticals and built-in storage echo the company's identity, forming a coherent, welcoming interior for everyday work. The project is backed by full working documentation: layout, lighting, electrics, elevations and furniture solutions."
+    }
+  },
+  {
+    "id": "beauty-salon-2023",
+    "category": "commercial",
+    "title": "Салон краси",
+    "year": "2023",
+    "location": "Україна, м. Київ",
+    "cover": "assets/img/p13-beauty-salon.jpg",
+    "gallery": ["assets/img/p13-beauty-salon.jpg", "assets/img/beauty-salon-2.png"],
+    "description": {
+      "uk": "Інтер'єр салону побудований на контрасті глибоких зелених відтінків, чорних графічних конструкцій і світлих робочих зон. Дзеркала з круглим підсвічуванням, жива зелень, металеві сітчасті перегородки та акцентне освітлення формують виразний простір, який водночас працює як комфортна зона для майстрів і клієнтів.",
+      "ru": "Интерьер салона построен на контрасте глубоких зелёных оттенков, чёрных графичных конструкций и светлых рабочих зон. Зеркала с круглой подсветкой, живая зелень, металлические сетчатые перегородки и акцентное освещение формируют выразительное пространство, которое одновременно работает как комфортная зона для мастеров и клиентов.",
+      "en": "The salon interior is built on a contrast of deep green tones, black graphic structures and bright work zones. Mirrors with circular lighting, live greenery, metal mesh partitions and accent lighting form an expressive space that also works as a comfortable zone for staff and clients."
+    }
+  },
+  {
+    "id": "office-rental-2023",
+    "category": "commercial",
+    "title": "Офісне приміщення для комерційної оренди",
+    "year": "2023",
+    "location": "Україна, м. Київ",
+    "cover": "assets/img/p13-office-rental.jpg",
+    "gallery": ["assets/img/p13-office-rental.jpg","assets/img/office-kyiv-2.png","assets/img/office-kyiv-3.png"],
+    "description": {
+      "uk": "Офісне приміщення спроєктоване як універсальний робочий простір для майбутнього комерційного орендаря. Відкрите планування, робочі місця вздовж вікон, нейтральна база та виразна зелена акцентна стіна дозволяють адаптувати інтер'єр під різні формати роботи.",
+      "ru": "Офисное помещение спроектировано как универсальное рабочее пространство для будущего коммерческого арендатора. Открытая планировка, рабочие места вдоль окон, нейтральная база и выразительная зелёная акцентная стена позволяют адаптировать интерьер под разные форматы работы.",
+      "en": "The office space is designed as a versatile workspace for a future commercial tenant. Open-plan layout, desks along the windows, a neutral base and a bold green accent wall allow the interior to adapt to different ways of working."
     }
   }
 ]
