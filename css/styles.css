@@ -83,6 +83,13 @@ a {
   justify-content: space-between;
   height: 76px;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  font-weight: 700;
+}
 
 .logo img{
   height: 40px;
@@ -457,6 +464,8 @@ section {
   background: var(--surface);
   overflow: hidden;
   border-radius: var(--radius-lg);
+  transition: 200ms;
+  border: 1px solid var(--surface);
 }
 
 .project-card .thumb {
@@ -471,8 +480,10 @@ section {
   transition: transform .5s ease;
 }
 
-.project-card:hover img {
-  transform: scale(1.06);
+.project-card:hover {
+  transform: scale(1.02);
+  transition: 200ms;
+  border: 1px solid var(--clay-deep);
 }
 
 .project-card .card-body {
@@ -506,83 +517,48 @@ section {
 }
 
 /* ===== Process ===== */
-.process {
-  background: var(--bg-deep);
-  color: var(--text-inverse);
-  position: relative;
-}
 
-.process .eyebrow {
-  color: #B8987C;
+.process{
+  width: 100%;
+  min-height: auto;
+  background-color: var(--surface);
 }
-
-.process-list {
-  border-top: 1px solid rgba(245, 240, 232, 0.12);
+.process-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
 }
-
-.process-item {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 40px;
-  padding: 40px 24px;
-  border-bottom: 1px solid rgba(245, 240, 232, 0.12);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.process-item{
+  flex: 1;
+  background-color: var(--bg);
   border-radius: var(--radius);
-}
-
-/* Эффект оживления при наведении */
-.process-item:hover {
-  background: rgba(245, 240, 232, 0.03);
-  transform: translateX(8px);
-}
-
-.process-num-wrap {
+  padding: 24px 20px;
+  border: 1px solid var(--bg);
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
-
-.process-num {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 36px;
-  line-height: 1;
-  color: var(--clay);
-  transition: color 0.3s ease;
+.process-item:hover{
+  border: 1px solid var(--clay-deep);
+  transform: scale(1.05);
+  transition: 200ms;
 }
-
-.process-item:hover .process-num {
-  color: #D9C2A6;
+.process-content{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
-.process-tag {
-  font-family: var(--font-sans);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(245, 240, 232, 0.4);
-}
-
-.process-content h3 {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  letter-spacing: 0.02em;
-}
-
-.process-content p {
-  color: #C9C1B2;
-  font-size: 15px;
-  line-height: 1.7;
-  max-width: 600px;
-}
-
 /* ===== Contact ===== */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-info dl {
@@ -603,53 +579,6 @@ section {
 
 .contact-info dd {
   font-size: 16px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-family: var(--font-body);
-  font-size: 15px;
-  border: 1px solid var(--surface-line);
-  background: var(--surface);
-  padding: 14px 16px;
-  border-radius: var(--radius);
-  color: var(--text);
-  width: 100%;
-}
-
-.contact-form textarea {
-  min-height: 110px;
-  resize: vertical;
-}
-
-.contact-form button {
-  align-self: flex-start;
-  border: none;
-}
-
-/* ===== Footer ===== */
-footer {
-  padding: 36px 0;
-  border-top: 1px solid var(--surface-line);
-}
-
-footer .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-footer p {
-  font-size: 13px;
-  color: var(--text-muted);
 }
 
 /* ===== Project detail page ===== */
@@ -782,6 +711,19 @@ footer p {
 
   .nav-toggle {
     display: block;
+  }
+  .process-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .process-item {
+    width: 100%;
+    padding: 20px 24px;
+  }
+
+  .process-item:hover {
+    transform: none;
   }
 }
 
