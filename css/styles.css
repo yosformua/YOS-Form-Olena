@@ -725,6 +725,9 @@ section {
   .process-item:hover {
     transform: none;
   }
+  .stat-row{
+    gap: 10px;
+  }
 }
 
 @media(max-width:640px) {
