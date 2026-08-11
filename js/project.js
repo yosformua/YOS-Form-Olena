@@ -1,13 +1,16 @@
 (function () {
   let project = null;
 
-  function getIdFromUrl() {
+  function getParams() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('id');
+    return {
+      id: params.get('id'),
+      from: params.get('from')
+    };
   }
 
   async function loadProject() {
-    const id = getIdFromUrl();
+    const { id } = getParams();
     const res = await fetch('data/projects.json');
     const projects = await res.json();
     project = projects.find((p) => p.id === id) || projects[0];
@@ -69,6 +72,16 @@
       .join('');
 
     document.title = `${project.title} — Olena Sychova`;
+
+    const { from } = getParams();
+
+    document.querySelectorAll('.back-link, .project-back-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        if (from) {
+          sessionStorage.setItem('scrollToProject', `project-${from}`);
+        }
+      });
+    });
 
     initLightbox();
   }

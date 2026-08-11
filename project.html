@@ -13,25 +13,17 @@
   <header class="site-header">
     <div class="wrap">
       <a href="index.html" class="logo"><img src="assets/img/Logo.png" alt="YOS"> × Olena <span>Sychova</span></a>
-      <nav class="main-nav">
-        <a href="index.html#about" data-i18n="nav.about">Про мене</a>
-        <a href="index.html#portfolio" data-i18n="nav.portfolio">Портфоліо</a>
-        <a href="index.html#process" data-i18n="nav.process">Процес роботи</a>
-        <a href="index.html#contact" data-i18n="nav.contact">Контакти</a>
-        <a href="index.html#contact" class="nav-cta" data-i18n="nav.cta">Обговорити проєкт</a>
-        <div class="lang-switch">
-          <button data-lang="uk">🇺🇦</button>
-          <button data-lang="en">🇬🇧</button>
-        </div>
-      </nav>
-      <button class="nav-toggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
   <section class="project-hero">
     <img id="project-cover" src="" alt="">
+
+    <a href="index.html#portfolio" class="back-link project-back-btn">
+      ← <span data-i18n="project.back">Усі проєкти</span>
+    </a>
+
     <div class="wrap">
-      <a href="index.html#portfolio" class="back-link">← <span data-i18n="project.back">Усі проєкти</span></a>
       <h1 class="project-title" id="project-title"></h1>
     </div>
   </section>
@@ -56,12 +48,19 @@
       <p class="project-description" id="project-description"></p>
 
       <div class="project-gallery" id="project-gallery"></div>
+
+      <div class="project-footer-actions">
+        <a href="index.html#portfolio" class="btn btn-outline project-back-btn"
+          style="color: var(--text); border-color: var(--surface-line);">
+          ← <span data-i18n="project.back">Повернутися до портфоліо</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="Увеличенное фото">
+    <img class="lightbox-content" id="lightbox-img" src="" alt="">
   </div>
 
   <script src="js/i18n.js"></script>
