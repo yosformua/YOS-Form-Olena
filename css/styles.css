@@ -67,6 +67,7 @@ a {
   gap: 10px;
 }
 
+
 .site-header {
   position: sticky;
   top: 0;
@@ -173,6 +174,7 @@ nav.main-nav a:hover {
   border: 0;
   cursor: pointer;
 }
+
 
 .hero {
   position: relative;
@@ -292,6 +294,7 @@ nav.main-nav a:hover {
   background: #4C5A48;
 }
 
+
 section {
   padding: 120px 0;
 }
@@ -315,6 +318,7 @@ section {
   font-size: 16px;
   max-width: 520px;
 }
+
 
 .about {
   background: var(--surface);
@@ -411,6 +415,7 @@ section {
   color: var(--text-muted);
 }
 
+
 .portfolio-header {
   display: flex;
   justify-content: space-between;
@@ -466,6 +471,7 @@ section {
   border-color: var(--clay-deep);
 }
 
+
 .thumb-carousel-wrapper {
   position: relative;
   width: 100%;
@@ -508,6 +514,47 @@ section {
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
+}
+
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 34px;
+  height: 34px;
+  background: rgba(245, 240, 232, 0.85);
+  color: var(--text);
+  border: 1px solid var(--surface-line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease, background-color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
+
+.thumb-carousel-wrapper:hover .carousel-arrow {
+  opacity: 1;
+}
+
+.carousel-arrow:hover {
+  background: #ffffff;
+  color: var(--clay-deep);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .thumb-scrollbar {
@@ -557,6 +604,7 @@ section {
   color: var(--text-muted);
 }
 
+
 .process {
   width: 100%;
   min-height: auto;
@@ -595,6 +643,7 @@ section {
   justify-content: space-around;
 }
 
+/* Contact Section */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -621,6 +670,7 @@ section {
   font-size: 16px;
 }
 
+/* Project Detail Page */
 .project-hero {
   position: relative;
   height: 64vh;
@@ -721,6 +771,7 @@ section {
   object-fit: cover;
 }
 
+
 .lightbox {
   display: none;
   position: fixed;
@@ -773,7 +824,8 @@ section {
   }
 }
 
-@media(max-width:960px) {
+
+@media(max-width: 960px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -781,6 +833,11 @@ section {
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-media img {
+    width: 85%;
+    height: 85%;
   }
 
   nav.main-nav {
@@ -795,6 +852,11 @@ section {
     border-bottom: 1px solid var(--surface-line);
     display: none;
     gap: 20px;
+  }
+
+  .stat-row {
+    flex-direction: column;
+    text-align: center;
   }
 
   nav.main-nav.open {
@@ -814,9 +876,13 @@ section {
     width: 100%;
     padding: 20px 24px;
   }
+
+  .carousel-arrow {
+    opacity: 0.8;
+  }
 }
 
-@media(max-width:640px) {
+@media(max-width: 640px) {
   .project-grid {
     grid-template-columns: 1fr;
   }

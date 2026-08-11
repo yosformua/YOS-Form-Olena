@@ -26,7 +26,6 @@
       .map((p) => {
         const catLabel = window.i18n.t(labels[p.category]) || p.category;
         
-        
         const images = p.gallery && p.gallery.length > 0 ? p.gallery : [p.cover];
         const imagesHtml = images
           .map((src) => `<img src="${src}" alt="${p.title}" loading="lazy">`)
@@ -44,7 +43,11 @@
             </div>
             ${
               hasMultiple
-                ? `<div class="thumb-scrollbar"><div class="thumb-scrollbar-thumb"></div></div>`
+                ? `
+                  <button class="carousel-arrow prev" aria-label="Попереднє фото">‹</button>
+                  <button class="carousel-arrow next" aria-label="Наступне фото">›</button>
+                  <div class="thumb-scrollbar"><div class="thumb-scrollbar-thumb"></div></div>
+                  `
                 : ''
             }
           </div>
@@ -66,8 +69,10 @@
     carousels.forEach((carousel) => {
       const wrapper = carousel.closest('.thumb-carousel-wrapper');
       const scrollThumb = wrapper ? wrapper.querySelector('.thumb-scrollbar-thumb') : null;
+      const prevBtn = wrapper ? wrapper.querySelector('.carousel-arrow.prev') : null;
+      const nextBtn = wrapper ? wrapper.querySelector('.carousel-arrow.next') : null;
 
-    
+      // Обновление полоски-индикатора при скролле
       function updateThumb() {
         if (!scrollThumb) return;
         const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
@@ -88,7 +93,24 @@
       carousel.addEventListener('scroll', updateThumb);
       updateThumb();
 
-   
+      // Навигация стрелками
+      if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+        });
+      }
+
+      // Перетаскивание мышью (drag)
       let isDown = false;
       let startX = 0;
       let scrollLeft = 0;
@@ -121,7 +143,7 @@
         carousel.scrollLeft = scrollLeft - walk;
       });
 
-
+      // Клик по карточке (переход на страницу проекта)
       carousel.addEventListener('click', (e) => {
         if (moved) {
           e.preventDefault();
